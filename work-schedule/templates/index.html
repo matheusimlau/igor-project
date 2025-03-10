@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Horários</title>
+    <!--<link rel="icon" href="path_to_favicon.ico" type="image/x-icon"-->
+</head>
+<body>
+    <div id="scrollable-table" class="table-container">
+        {{ table|safe }}
+    </div>
+
+    <!-- Import external JavaScript -->
+    <script src="{{ url_for('static', filename='controller.js') }}"></script>
+</body>
+</html>
